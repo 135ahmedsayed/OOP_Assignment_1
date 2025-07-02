@@ -10,6 +10,20 @@
             foreach (string s in value)
                 Console.WriteLine(s);
             #endregion
+
+            #region Q2
+            Console.WriteLine("\n");
+            Person[] person = new Person[3];
+            person[0] = new Person("Ahmed", 25);
+            person[1] = new Person("Sayed", 20);
+            person[2] = new Person("Mohamed", 15);
+            Console.WriteLine("Person Details : ");
+            foreach (Person p in person)
+            {
+                Console.WriteLine($"Name: {p.name}, Age: {p.age}");
+            }
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey();
         }
     }

@@ -11,3 +11,19 @@ public enum WeekDays
     Sunday,
 }
 #endregion
+
+#region With Q2
+public struct Person
+{
+    public string name;
+    public int age;
+
+    public Person(string name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+};
+
+
+#endregion
