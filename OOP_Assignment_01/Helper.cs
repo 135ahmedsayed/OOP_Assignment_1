@@ -47,3 +47,19 @@ public enum Color
     Blue
 }
 #endregion
+
+#region With Q5
+public struct Point
+{
+    public double x;
+    public double y;
+
+    //constructor
+    public Point(double x, double y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+#endregion

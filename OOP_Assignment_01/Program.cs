@@ -69,6 +69,20 @@ namespace OOP_Assignment_01
             }
             Console.WriteLine("\n");
             #endregion
+
+            #region Q5
+            Point[] points = new Point[2];
+            for (int i = 0; i < points.Length; i++)
+            {
+                Console.WriteLine($"Enter the Point{i + 1} -> ");
+                Console.Write($"Enter x{i + 1}: ");
+                points[i].x = int.Parse(Console.ReadLine()!);
+                Console.Write($"Enter y{i + 1}: ");
+                points[i].y = int.Parse(Console.ReadLine()!);
+            }
+            double distance = Math.Sqrt(Math.Pow(points[1].x - points[0].x, 2) + Math.Pow(points[1].y - points[0].y, 2));
+            Console.WriteLine($"The distance between the two points is: {distance}");
+            #endregion
             Console.ReadKey();
         }
     }
