@@ -27,3 +27,14 @@ public struct Person
 
 
 #endregion
+
+#region With Q3
+public enum Seas_on
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter,
+}
+
+#endregion

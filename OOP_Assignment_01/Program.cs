@@ -24,6 +24,33 @@
             }
             Console.WriteLine("\n");
             #endregion
+
+            #region Q3
+            Console.Write("Seasons : ");
+            bool r = Enum.TryParse(Console.ReadLine(), true, out Seas_on S);
+            if (r)
+            {
+                Console.Write("month range for that season : ");
+                switch (S)
+                {
+                    case Seas_on.Spring:
+                        Console.WriteLine("March , April , May ");
+                        break;
+                    case Seas_on.Summer:
+                        Console.WriteLine("june , july , august ");
+                        break;
+                    case Seas_on.Autumn:
+                        Console.WriteLine("September , October , November ");
+                        break;
+                    case Seas_on.Winter:
+                        Console.WriteLine("December , junuary , February");
+                        break;
+                }
+            }
+            else
+                Console.WriteLine("Invalid season name. Please enter: Spring, Summer, Autumn, or Winter.");
+
+            #endregion
             Console.ReadKey();
         }
     }
