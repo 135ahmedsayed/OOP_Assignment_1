@@ -1,4 +1,6 @@
-﻿namespace OOP_Assignment_01
+﻿using System.Drawing;
+
+namespace OOP_Assignment_01
 {
     internal class Program
     {
@@ -50,6 +52,22 @@
             else
                 Console.WriteLine("Invalid season name. Please enter: Spring, Summer, Autumn, or Winter.");
 
+            #endregion
+
+            #region Q4
+            Console.WriteLine("\n");
+            Console.Write("Enter a color : ");
+            string colorInput = Console.ReadLine()!;
+            bool C = Enum.TryParse(colorInput, true, out Color color);
+            if (C)
+            {
+                Console.WriteLine($"the {color} is a primary color ");
+            }
+            else
+            {
+                Console.WriteLine($"the {colorInput} isn't a primary color ");
+            }
+            Console.WriteLine("\n");
             #endregion
             Console.ReadKey();
         }

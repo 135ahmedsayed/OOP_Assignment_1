@@ -38,3 +38,12 @@ public enum Seas_on
 }
 
 #endregion
+
+#region With Q4
+public enum Color
+{
+    Red,
+    Green,
+    Blue
+}
+#endregion
