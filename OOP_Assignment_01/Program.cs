@@ -83,6 +83,32 @@ namespace OOP_Assignment_01
             double distance = Math.Sqrt(Math.Pow(points[1].x - points[0].x, 2) + Math.Pow(points[1].y - points[0].y, 2));
             Console.WriteLine($"The distance between the two points is: {distance}");
             #endregion
+
+            #region Q6
+            Console.WriteLine("\n");
+            Persons[] persons = new Persons[3];
+            Persons[] Oldest = new Persons[1];
+            Oldest[0] = new Persons("Unknown", 0); // Initialize with a default value
+            for (int i = 0; i < persons.Length; i++)
+            {
+                Console.WriteLine($"Enter the Person{i + 1} -> ");
+                Console.Write("Enter name: ");
+                string name = Console.ReadLine()!;
+                Console.Write("Enter age: ");
+                int age = int.Parse(Console.ReadLine()!);
+                persons[i] = new Persons(name, age);
+            }
+            for (int i = 0; i < persons.Length; i++) // 5,4,7
+            {
+                if (persons[i].age > Oldest[0].age)
+                {
+                    Oldest[0] = persons[i];
+                }
+            }
+            Console.WriteLine("the name and age of the oldest person : ");
+            Console.WriteLine($"Name: {Oldest[0].name}, Age: {Oldest[0].age}");
+
+            #endregion
             Console.ReadKey();
         }
     }

@@ -63,3 +63,20 @@ public struct Point
 }
 
 #endregion
+
+#region With Q6
+public struct Persons
+{
+    public string name;
+    public int age;
+
+    public Persons(string name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+
+};
+#endregion
+
